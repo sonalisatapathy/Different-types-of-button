@@ -9,13 +9,23 @@
       #youtube_btn {
         background-color: rgb(215, 7, 7);
         color: white;
-        /* padding: 5px; */
-        height: 36px;
-        width: 100px;
+        padding: 10px;
+        /* padding is better approach because is we change text size then in case of height and with it overflow */
+        /* height: 36px;
+        width: 100px; */
         border: none;
         border-radius: 4px;
         cursor: pointer;
         margin-right: 8px;
+        transition: opacity 0.15s;
+        /* allign all the text on top */
+        vertical-align: top;
+      }
+      #youtube_btn:hover {
+        opacity: 0.8;
+      }
+      #youtube_btn:active {
+        opacity: 0.5;
       }
       #join_btn {
         background-color: white;
@@ -24,10 +34,21 @@
         /* to make same border colour use border-style property */
         border-style: solid;
         border-width: 1px;
-        height: 36px;
-        width: 70px;
+        /* height: 36px;
+        width: 70px; */
+        padding: 9px 15px;
+        vertical-align: top;
         cursor: pointer;
         margin-right: 8px;
+        border-radius: 3px;
+        transition: background-color 0.15s, color 0.15s;
+      }
+      #join_btn:hover {
+        background-color: rgb(0, 123, 255);
+        color: white;
+      }
+      #join_btn:active {
+        opacity: 0.7;
       }
       #tweeter_btn {
         color: white;
@@ -35,51 +56,85 @@
         /* make border-radius half of height or width  */
         /* border-radius: 35px; */
         border-radius: 18px;
-        height: 36px;
-        width: 70px;
+        /* height: 36px;
+        width: 70px; */
+        padding: 9px 14px;
+        vertical-align: top;
         border: none;
         font-weight: bold;
         font-size: 15px;
         cursor: pointer;
+        transition: box-shadow 0.15s;
+      }
+      #tweeter_btn:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+        /* horizontal, vertical, blur , color */
       }
       #Uber_btn {
         background-color: black;
         color: white;
         border: none;
-        height: 36px;
-        width: 110px;
+        /* height: 36px;
+        width: 110px; */
+        padding: 10px 15px;
+        vertical-align: top;
         margin: 0 8px;
+        transition: opacity 0.15s;
+      }
+      #Uber_btn:hover {
+        opacity: 0.6;
       }
       #Amazon_btn {
         background-color: rgb(255, 216, 20);
-        height: 36px;
-        width: 110px;
+        /* height: 36px;
+        width: 110px; */
+        padding: 11px 16px;
+        vertical-align: top;
         border-radius: 18px;
         border: none;
         font-weight: bold;
+        transition: background-color 0.15s;
+      }
+      #Amazon_btn:hover {
+        background-color: rgb(201, 169, 5);
       }
       #GitHub_btn {
         color: white;
         background-color: rgb(46, 164, 79);
-        height: 36px;
-        width: 90px;
+        /* height: 36px;
+        width: 90px; */
+        padding: 10px 16px;
+        vertical-align: top;
         margin-left: 8px;
         border-radius: 18px;
         border: none;
+      }
+      #GitHub_btn:hover {
+        box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.5);
       }
       #bootstrap_btn1 {
         color: white;
         background-color: rgb(121, 82, 179);
         border: none;
         margin: 0 8px;
+        padding: 10px 15px;
+      }
+      #bootstrap_btn1:hover {
+        opacity: 0.7;
       }
       #bootstrap_btn2 {
         color: rgb(121, 82, 179);
+        padding: 8px 15px;
+      }
+      #bootstrap_btn2:hover {
+        background-color: rgba(122, 118, 118, 0.859);
+        color: white;
+        padding: 10px 17px;
+        border: none;
       }
       #bootstrap_btn1,
       #bootstrap_btn2 {
-        height: 36px;
-        width: 90px;
+        vertical-align: top;
       }
       #Linkdin_btn1 {
         color: white;
@@ -88,12 +143,20 @@
         padding: 0 20px;
         margin: 0 8px;
         border-radius: 18px;
+        transition: background-color 0.15s;
+      }
+      #Linkdin_btn1:hover {
+        background-color: rgb(80, 136, 227);
       }
       #Linkdin_btn2 {
         color: rgb(10, 102, 194);
         border-radius: 18px;
         width: 70px;
         border: 1px solid rgb(10, 102, 194);
+        transition: background-color 0.15s;
+      }
+      #Linkdin_btn2:hover {
+        background-color: rgb(212, 230, 238);
       }
       #Linkdin_btn1,
       #Linkdin_btn2 {
